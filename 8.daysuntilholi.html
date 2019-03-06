@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+Today  is: <span id="txt"></span>  
+Time  is: <span id="demo"></span>  
+<script>  
+
+//var today = new Date();
+
+// var xmas = new Date("march 2, 2019");
+// var msPerDay = 24 * 60 * 60 * 1000 ;
+// var timeLeft = (xmas.getTime() - today.getTime());
+// var res= alert(timeleft);
+
+today=new Date();
+var cmas=new Date(today.getFullYear(), 2, 20);
+if (today.getMonth()==2 && today.getDate()>20) 
+{
+cmas.setFullYear(cmas.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
+" days left until holi!");
+
+
+</script>  
+</body>
+</html> 

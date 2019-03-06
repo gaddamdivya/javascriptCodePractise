@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>return an array of numbers that are greater than 5a0</h2>
+<button onclick="myFunction()">try it</button>
+<span id="txt"></span>  
+
+<script>
+    var num = [10, 23, 33,1, 4, 50, 70,99,66,100];
+   function result(num){
+       return num>50;
+   }
+   function myFunction(){
+       document.getElementById("txt").innerHTML=num.filter(result);
+   }
+</script>
+
+
+</body>
+</html> 

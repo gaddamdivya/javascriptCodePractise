@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>enter a positive number. Return an error if the number is negative.</title>
+</head>
+<body>
+        <span id="txt"></span>  
+    <form>
+        <input id="mnumber" type="number" name="number" value="">
+        <input type="button"  onclick="signvalue()" value="submit"> 
+    </form>
+    
+    <script>
+      
+      
+      function signvalue(){
+        var integer=document.getElementById("mnumber").value;
+        document.getElementById("txt").innerHTML=Math.sign(integer);
+          
+          
+      }
+     
+      </script>
+</body>
+</html>

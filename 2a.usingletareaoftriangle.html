@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Area of a triangle</h2>
+<span id="txt"></span>  
+<span id="demo"></span>
+<script>
+    let a=10;
+    let b=20;
+    let c=30;
+    let s=(a+b+c)/2;
+    
+    document.getElementById("txt").innerHTML=s;
+    let r=s*(s-a)*(s-b)*(s-c);
+    document.getElementById("demo").innerHTML=Math.sqrt(r);
+</script>
+
+</body>
+</html> 

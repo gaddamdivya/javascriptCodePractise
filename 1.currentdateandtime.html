@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+Today  is: <span id="txt"></span>  
+Time  is: <span id="demo"></span>  
+<script>  
+var today=new Date();  
+var day=today.getDay();
+var dayList=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+document.getElementById("txt").innerHTML=dayList[0];
+
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+document.getElementById("demo").innerHTML=h+":"+m+":"+s;  
+
+
+</script>  
+</body>
+</html> 
